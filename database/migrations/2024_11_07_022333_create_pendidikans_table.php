@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('pendidikans', function (Blueprint $table) {
             $table->id();
+            $table->integer('informasi_id');
             $table->year('tahun_masuk');
             $table->year('tahun_keluar');
             $table->string('asal_sekolah');
